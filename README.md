@@ -37,7 +37,8 @@ Authorization: Bearer <JWT_TOKEN>
 
 # Base URL
 The base URL for the NeDoMed backend API is:
-https://nedomed-backend.com/api/
+
+(https://nedomed-backend.onrender.com)
 
 ## Endpoints
 1. User Authentication
