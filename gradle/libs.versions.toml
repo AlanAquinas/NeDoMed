@@ -11,6 +11,7 @@ activityCompose = "1.8.2"
 composeBom = "2023.08.00"
 material = "1.11.0"
 library = "3.2.0-alpha11"
+retrofit = "2.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +31,9 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-library = { group = "androidx.databinding", name = "library", version.ref = "library" }
+retrofit-retrofit = {module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
+retrofit-gson = {module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit"}
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
