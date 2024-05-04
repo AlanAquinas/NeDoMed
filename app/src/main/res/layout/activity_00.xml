@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/rvdusdo003r"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cr30bffffffff"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/r1nsj5cw995y"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/sff5e27fdsw1"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+            </LinearLayout>
+            <TextView
+                android:id="@+id/rvsd89gs71n"
+                android:textColor="#216987"
+                android:textSize="32sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="NeDoMed"
+                />
+            <TextView
+                android:id="@+id/rdxvg9eri8nu"
+                android:textColor="#325058"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="NeDoMed is a quick access to your clinic and a wide range of digital medical services, for you and your family members."
+                />
+            <LinearLayout
+                android:id="@+id/r0udm1m5b97e"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/cr30"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ryj4gjlgdueh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:textColor="#13CAD6"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rzk85jzww26"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/cr30bffe9f6fe"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/rtyfac3lzcfh"
+                    android:textColor="#13CAD6"
+                    android:textSize="24sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Sign Up"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
