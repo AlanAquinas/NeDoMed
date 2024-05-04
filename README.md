@@ -42,7 +42,9 @@ The base URL for the NeDoMed backend API is:
 
 ## Endpoints
 1. User Authentication
+
 POST /api/login
+
 Description: Authenticate user and generate JWT token.
 
 Request Body:
@@ -82,6 +84,7 @@ allergies (string): Patient's allergies
 phone (string): Patient's phone number
 Authorization: Required (Patient or Admin)
 ## 4. Doctor Endpoints
+
 GET /api/doctor/{id}
 Description: Get doctor data by ID.
 Response:
