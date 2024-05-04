@@ -42,9 +42,7 @@ The base URL for the NeDoMed backend API is:
 
 ## Endpoints
 1. User Authentication
-
 POST /api/login
-
 Description: Authenticate user and generate JWT token.
 
 Request Body:
@@ -84,42 +82,42 @@ allergies (string): Patient's allergies
 phone (string): Patient's phone number
 Authorization: Required (Patient or Admin)
 ## 4. Doctor Endpoints
-
 GET /api/doctor/{id}
 Description: Get doctor data by ID.
 Response:
-id (int): Doctor ID
-first_name (string): Doctor's first name
-last_name (string): Doctor's last name
-specialization (string): Doctor's specialization
-qualifications (string): Doctor's qualifications
-experience_years (int): Doctor's years of experience
-license_number (string): Doctor's license number
-room (string): Doctor's room number
-Authorization: Required (Doctor or Admin)
+- id (int): Doctor ID
+- first_name (string): Doctor's first name
+- last_name (string): Doctor's last name
+- specialization (string): Doctor's specialization
+- qualifications (string): Doctor's qualifications
+- experience_years (int): Doctor's years of experience
+- license_number (string): Doctor's license number
+- room (string): Doctor's room number
+- Authorization: Required (Doctor or Admin)
 5. Appointment Endpoints
 POST /api/appointment/{doctor_id}/schedule
 Description: Schedule an appointment with a doctor.
 Request Body:
-appointment_date (string): Appointment date (YYYY-MM-DD)
-start_time (string): Appointment start time (HH:MM)
-reason (string): Reason for appointment
-notes (string): Additional notes
+- appointment_date (string): Appointment date (YYYY-MM-DD)
+- start_time (string): Appointment start time (HH:MM)
+- reason (string): Reason for appointment
+- notes (string): Additional notes
 Response:
-id (int): Appointment ID
-patient_id (int): Patient ID
-doctor_id (int): Doctor ID
-appointment_date (string): Appointment date
-start_time (string): Appointment start time
-end_time (string): Appointment end time
-reason (string): Reason for appointment
-is_accepted (boolean): Appointment acceptance status
-notes (string): Additional notes
-Authorization: Required (Patient or Admin)
+- id (int): Appointment ID
+- patient_id (int): Patient ID
+- doctor_id (int): Doctor ID
+- appointment_date (string): Appointment date
+- start_time (string): Appointment start time
+- end_time (string): Appointment end time
+- reason (string): Reason for appointment
+- is_accepted (boolean): Appointment acceptance status
+- notes (string): Additional notes
+- Authorization: Required (Patient or Admin)
+- 
 Error Handling
 The NeDoMed backend API returns appropriate HTTP status codes along with error messages in JSON format for any encountered errors. Common error codes include:
 
-400 Bad Request: Invalid request parameters or missing required fields.
-401 Unauthorized: Invalid or missing JWT token for authentication.
+400 Bad Request: Invalid request parameters or missing required fields. 
+401 Unauthorized: Invalid or missing JWT token for authentication. 
 404 Not Found: Resource not found or ID does not exist.
 500 Internal Server Error: Unexpected server error.
