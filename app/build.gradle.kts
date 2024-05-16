@@ -73,4 +73,6 @@ dependencies {
 
     implementation(libs.retrofit.retrofit)
     implementation(libs.retrofit.gson)
+    implementation(libs.logging.interceptor)
+
 }
