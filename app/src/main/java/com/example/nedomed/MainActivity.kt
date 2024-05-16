@@ -1,8 +1,6 @@
 package com.example.nedomed
 
 import android.os.Bundle
-import android.util.Log
-import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.nedomed.databinding.ActivityMainBinding
@@ -12,7 +10,6 @@ import com.example.nedomed.helper.BottomNavigationPosition
 import com.example.nedomed.helper.createFragment
 import com.example.nedomed.helper.findNavigationPositionById
 import com.example.nedomed.helper.getTag
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {

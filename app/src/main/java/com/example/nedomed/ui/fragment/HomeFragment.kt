@@ -1,18 +1,19 @@
-package com.example.nedomed
+package com.example.nedomed.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.nedomed.databinding.FragmentHomeBinding
-import com.example.nedomed.databinding.FragmentSearchBinding
 
-class SearchFragment : Fragment() {
-    private lateinit var binding: FragmentSearchBinding
+class HomeFragment : Fragment() {
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate")
     }
 
     override fun onCreateView(
@@ -20,11 +21,17 @@ class SearchFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSearchBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy")
+    }
+
     companion object {
-        val TAG: String = SearchFragment::class.java.simpleName
-        fun newInstance() = SearchFragment()
+        val TAG: String = HomeFragment::class.java.simpleName
+        fun newInstance() = HomeFragment()
     }
 }

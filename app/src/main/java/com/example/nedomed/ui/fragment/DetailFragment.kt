@@ -1,15 +1,14 @@
-package com.example.nedomed
+package com.example.nedomed.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.nedomed.databinding.FragmentAccountBinding
+import com.example.nedomed.databinding.FragmentDetailBinding
 
-class AccountFragment : Fragment() {
-    private lateinit var binding: FragmentAccountBinding
-
+class DetailFragment : Fragment() {
+    private lateinit var binding: FragmentDetailBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -19,11 +18,11 @@ class AccountFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAccountBinding.inflate(inflater, container, false)
+        binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
     companion object {
-        val TAG: String = AccountFragment::class.java.simpleName
-        fun newInstance() = AccountFragment()
+        val TAG: String = DetailFragment::class.java.simpleName
+        fun newInstance() = DetailFragment()
     }
 }
