@@ -1,11 +1,11 @@
 package com.example.nedomed.helper
 
 import androidx.fragment.app.Fragment
-import com.example.nedomed.ui.fragment.AccountFragment
-import com.example.nedomed.ui.fragment.DetailFragment
-import com.example.nedomed.ui.fragment.HomeFragment
+import com.example.nedomed.ui.main.AccountFragment
+import com.example.nedomed.ui.main.DetailFragment
+import com.example.nedomed.ui.main.HomeFragment
 import com.example.nedomed.R
-import com.example.nedomed.ui.fragment.SearchFragment
+import com.example.nedomed.ui.main.SearchFragment
 
 enum class BottomNavigationPosition(val position: Int, val id: Int) {
     HOME(0, R.id.navHome),

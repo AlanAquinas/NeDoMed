@@ -2,6 +2,7 @@ package com.example.nedomed.di
 
 import com.example.nedomed.network.api.API
 import com.example.nedomed.network.api.TokenInterceptor
+import com.example.nedomed.repository.AnalysisRepository
 import com.example.nedomed.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -35,4 +36,9 @@ class NetworkModule {
         return retrofitBuilder.build().create(API::class.java)
     }
 
+    @Provides
+    @Singleton
+    fun provideAnalysisRepository(api: API): AnalysisRepository {
+        return AnalysisRepository(api)
+    }
 }

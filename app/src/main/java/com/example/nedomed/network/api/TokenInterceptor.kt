@@ -1,7 +1,5 @@
 package com.example.nedomed.network.api
 
-import android.content.Context
-import android.content.SharedPreferences
 import com.example.nedomed.utils.TokenManager
 import okhttp3.Interceptor
 import okhttp3.Response

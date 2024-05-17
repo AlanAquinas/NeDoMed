@@ -1,19 +1,22 @@
-package com.example.nedomed.ui.fragment
+package com.example.nedomed.ui.main
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.commit
+import com.example.nedomed.R
 import com.example.nedomed.databinding.FragmentHomeBinding
+import com.example.nedomed.ui.analysis.AnalysListFragment
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate")
+
     }
 
     override fun onCreateView(
@@ -25,9 +28,16 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "onDestroy")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.clickableContainerMyResults.setOnClickListener {
+            parentFragmentManager.commit{
+                add(R.id.frame_layout, AnalysListFragment(), "tag")
+                setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                addToBackStack(null)
+            }
+        }
     }
 
     companion object {

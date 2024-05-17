@@ -1,6 +1,7 @@
 package com.example.nedomed.network.api
 
 
+import com.example.nedomed.network.model.AnalysResponse
 import com.example.nedomed.network.model.AppointmentBody
 import com.example.nedomed.network.model.AppointmentResponseGet
 import com.example.nedomed.network.model.AppointmentResponsePost
@@ -43,5 +44,10 @@ interface API {
     suspend fun getAppointmentsByUserId(
         @Path("id") id: Int
     ): Response<List<AppointmentResponseGet>>
+
+    @GET("api/patient/{id}/analysis-results/")
+    suspend fun getAnalysisResultsByUserId(
+        @Path("id") id: Int
+    ): Response<List<AnalysResponse>>
 
 }
