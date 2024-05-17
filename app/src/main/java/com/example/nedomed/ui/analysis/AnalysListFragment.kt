@@ -44,6 +44,7 @@ class AnalysListFragment : Fragment(R.layout.analys_item_list) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        analysisViewModel.getAllAnalysis()
         binding.recyclerViewAnalys.adapter = adapter
 
         bindObservers()

@@ -19,8 +19,8 @@ class AnalysAdapter(private val onAnalysClicked: (AnalysResponse) -> Unit) :
     }
 
     override fun onBindViewHolder(holder: AnalysViewHolder, position: Int) {
-        val note = getItem(position)
-        note?.let {
+        val analys = getItem(position)
+        analys?.let {
             holder.bind(it)
         }
     }
