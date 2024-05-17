@@ -10,8 +10,9 @@ import com.example.nedomed.helper.BottomNavigationPosition
 import com.example.nedomed.helper.createFragment
 import com.example.nedomed.helper.findNavigationPositionById
 import com.example.nedomed.helper.getTag
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var navPosition: BottomNavigationPosition = BottomNavigationPosition.HOME

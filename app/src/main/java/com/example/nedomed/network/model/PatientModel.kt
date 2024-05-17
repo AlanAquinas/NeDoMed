@@ -3,15 +3,14 @@ package com.example.nedomed.network.model
 import com.google.gson.annotations.SerializedName
 
 data class PatientResponse(
-    val id : Int,
-    @SerializedName("first_name")
-    val firstName : String,
-    @SerializedName("last_name")
-    val lastName : String,
+    @SerializedName("user")
+    val userId: Int,
     @SerializedName("date_of_birth")
-    val dateOfBirth : String,
+    val dateOfBirth: String,
     @SerializedName("blood_type")
-    val bloodType : String,
-    val allergies : String,
-    val phone : String
+    val bloodType: String,
+    @SerializedName("allergies")
+    val allergies: String,
+    @SerializedName("phone")
+    val phone: String
 )
