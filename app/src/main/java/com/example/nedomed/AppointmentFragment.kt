@@ -9,18 +9,18 @@ import android.widget.CalendarView
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.nedomed.databinding.FragmentAppointmentBinding
+import com.example.nedomed.databinding.AppointmentCreateBinding
 
 class AppointmentFragment : Fragment() {
 
-    private var _binding: FragmentAppointmentBinding? = null
+    private var _binding: AppointmentCreateBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAppointmentBinding.inflate(inflater, container, false)
+        _binding = AppointmentCreateBinding.inflate(inflater, container, false)
         return binding.root
     }
 

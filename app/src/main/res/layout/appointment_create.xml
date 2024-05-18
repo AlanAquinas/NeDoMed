@@ -44,6 +44,7 @@
     <CalendarView
         android:id="@+id/calendar_view"
         android:layout_width="match_parent"
+        android:outlineSpotShadowColor="@color/blue"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp" />
 
@@ -57,34 +58,43 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/time3pm"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:text="3:00 PM" />
 
         <Button
+            android:id="@+id/time430pm"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="4:30 PM"
             android:layout_marginStart="8dp"
+            android:textColor="@color/black"
             android:layout_marginEnd="8dp" />
 
         <Button
+            android:id="@+id/time530pm"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/blue"
             android:text="5:30 PM" />
 
         <Button
+            android:id="@+id/time6pm"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="6:00 PM"
+            android:textColor="@color/black"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp" />
     </LinearLayout>
