@@ -1,5 +1,6 @@
 package com.example.nedomed.repository
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.nedomed.network.api.API
 import com.example.nedomed.network.model.AnalysResponse
@@ -19,12 +20,21 @@ class AnalysisRepository @Inject constructor(private val api: API) {
     suspend fun getAnalysis() {
         _analysisLiveData.postValue(NetworkResult.Loading())
         val response = api.getAnalysisResultsByUserId(5)
+
         if (response.isSuccessful && response.body() != null) {
+            Log.d("API", "${response.body()}")
+            Log.d("API", "${response.headers()}")
             _analysisLiveData.postValue(NetworkResult.Success(response.body()!!))
-        } else if (response.errorBody() != null) {
+        }
+
+        else if (response.errorBody() != null) {
+            Log.d("API", "${response}")
             val errorObj = JSONObject(response.errorBody()!!.charStream().readText())
-            _analysisLiveData.postValue(NetworkResult.Error(errorObj.getString("message")))
-        } else {
+            _analysisLiveData.postValue(NetworkResult.Error(errorObj.getString("detail")))
+        }
+
+        else {
+            Log.d("API", "${response}")
             _analysisLiveData.postValue(NetworkResult.Error("Something Went Wrong"))
         }
     }
