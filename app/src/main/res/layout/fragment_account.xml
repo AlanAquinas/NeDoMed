@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.AccountFragment">
+    tools:context=".ui.login.AccountFragment">
 
-    <TextView
-        android:gravity="center"
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginStart="120dp" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/rr81nt2on63"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textStyle="bold"
-        android:text="Account fragment" />
+        android:layout_weight="1"
+        android:background="@drawable/cr30bffffffff"
+        android:paddingBottom="93dp">
 
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/welcome_static_text_view"
+                android:textColor="#13CAD6"
+                android:textSize="24sp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Welcome"/>
+
+            <TextView
+                android:id="@+id/info_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginBottom="77dp"
+                android:layout_weight="1"
+                android:text="BOOKING AN APPOINTMENT WITH A DOCTOR AND CALLING THE DOCTOR AT HOME No need to call the clinic or come to make an appointment. "
+                android:textColor="#252525"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/username_static_text_view"
+                android:textColor="#252525"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="33dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Username"/>
+
+            <EditText
+                android:id="@+id/username_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cr13bffe9f6fe"
+                android:paddingVertical="14dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="21dp"
+                android:layout_marginHorizontal="31dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/password_static_text_view"
+                android:textColor="#252525"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="33dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Password "
+                />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/cr13bffe9f6fe"
+                android:paddingVertical="14dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="31dp"
+                android:orientation="horizontal"/>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@color/secondaryColor"/>
+
+            <TextView
+                android:id="@+id/signup_text_view"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Don’t have an account? Sign Up"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

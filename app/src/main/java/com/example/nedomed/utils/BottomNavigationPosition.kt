@@ -1,7 +1,7 @@
-package com.example.nedomed.helper
+package com.example.nedomed.utils
 
 import androidx.fragment.app.Fragment
-import com.example.nedomed.ui.main.AccountFragment
+import com.example.nedomed.ui.login.AccountFragment
 import com.example.nedomed.ui.main.DetailFragment
 import com.example.nedomed.ui.main.HomeFragment
 import com.example.nedomed.R

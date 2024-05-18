@@ -9,4 +9,5 @@
     <string name="schedule_description">Your personal plan for regular medical examinations to maintain overall health</string>
     <string name="medications">Medications</string>
     <string name="results">Laboratory tests results</string>
+    <string name="txt_error_message">Error</string>
 </resources>

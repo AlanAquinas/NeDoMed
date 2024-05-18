@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment
 import com.example.nedomed.databinding.ActivityMainBinding
 import com.example.nedomed.extension.active
 import com.example.nedomed.extension.switchFragment
-import com.example.nedomed.helper.BottomNavigationPosition
-import com.example.nedomed.helper.createFragment
-import com.example.nedomed.helper.findNavigationPositionById
-import com.example.nedomed.helper.getTag
+import com.example.nedomed.utils.BottomNavigationPosition
+import com.example.nedomed.utils.createFragment
+import com.example.nedomed.utils.findNavigationPositionById
+import com.example.nedomed.utils.getTag
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
