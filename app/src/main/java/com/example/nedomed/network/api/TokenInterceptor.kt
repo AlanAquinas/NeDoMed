@@ -6,6 +6,7 @@ import okhttp3.Response
 import javax.inject.Inject
 
 class TokenInterceptor @Inject constructor(): Interceptor {
+
     @Inject
     lateinit var tokenManager: TokenManager
 

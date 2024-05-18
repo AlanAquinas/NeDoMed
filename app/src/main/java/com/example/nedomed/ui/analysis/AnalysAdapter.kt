@@ -34,6 +34,9 @@ class AnalysAdapter(private val onAnalysClicked: (AnalysResponse) -> Unit) :
             binding.root.setOnClickListener {
                 onAnalysClicked(analys)
             }
+            binding.conclusionText.text = analys.conclusion
+            binding.dateText.text = analys.date
+            binding.detailText.setText(analys.analysisDetails.replace("\\\n", System.getProperty("line.separator")))
         }
 
     }

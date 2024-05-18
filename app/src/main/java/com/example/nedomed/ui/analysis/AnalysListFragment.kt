@@ -48,6 +48,12 @@ class AnalysListFragment : Fragment(R.layout.analys_item_list) {
         binding.recyclerViewAnalys.adapter = adapter
 
         bindObservers()
+
+        binding.floatingBackButton.setOnClickListener {
+            parentFragmentManager.commit {
+                remove(AnalysListFragment())
+            }
+        }
     }
 
     private fun onAnalysClicked(analysResponse: AnalysResponse){

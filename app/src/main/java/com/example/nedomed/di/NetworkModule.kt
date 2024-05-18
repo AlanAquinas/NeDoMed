@@ -32,8 +32,11 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun providesAPI(retrofitBuilder: Retrofit.Builder): API {
-        return retrofitBuilder.build().create(API::class.java)
+    fun providesAPI(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient): API {
+        return retrofitBuilder
+            .client(okHttpClient)
+            .build()
+            .create(API::class.java)
     }
 
     @Provides

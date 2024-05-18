@@ -11,7 +11,7 @@ import org.json.JSONObject
 import retrofit2.Response
 import javax.inject.Inject
 
-class UserRepository @Inject constructor(private val userAPI: API) {
+class UserRepository @Inject constructor(private val API: API) {
 
     private val _userTokenLiveData = MutableLiveData<NetworkResult<TokenResponse>>()
     val userResponseLiveData: LiveData<NetworkResult<TokenResponse>>
@@ -19,7 +19,7 @@ class UserRepository @Inject constructor(private val userAPI: API) {
 
     suspend fun loginUser(userRequest: UserRequest) {
         _userTokenLiveData.postValue(NetworkResult.Loading())
-        val response =userAPI.signIn(userRequest)
+        val response =API.signIn(userRequest)
         handleResponse(response)
     }
 
